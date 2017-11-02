@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mcs.du.noorul.smas.Display_teacher">
+
+    <include
+        android:id="@+id/ab"
+        layout="@layout/appbar" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ab"
+        android:layout_margin="10dp"
+        android:text="Teacher ID :" />
+
+    <TextView
+        android:id="@+id/teacher_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_id"
+        android:layout_margin="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_id"
+        android:text="Teacher Name :"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_name"
+        android:text="Email :"
+        android:layout_margin="10dp" />
+    <TextView
+        android:id="@+id/email"
+        android:layout_below="@id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_addsubject"
+        android:layout_width="match_parent"
+        android:onClick="addSubject"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:text="Add Subject" />
+
+</RelativeLayout>

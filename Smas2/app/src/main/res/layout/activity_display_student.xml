@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.mcs.du.noorul.smas.Display_student">
+
+    <include
+        android:id="@+id/ab"
+        layout="@layout/appbar" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ab"
+        android:layout_margin="10dp"
+        android:text="Student ID :" />
+
+    <TextView
+        android:id="@+id/student_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_id"
+        android:layout_margin="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_id"
+        android:text="Student Name :"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_name"
+        android:text="Email :"
+        android:layout_margin="10dp" />
+    <TextView
+        android:id="@+id/email"
+        android:layout_below="@id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:text="Semester"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/semester"
+        android:layout_below="@id/tv_semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_department_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semester"
+        android:text="Department ID :"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/department_id"
+        android:layout_below="@id/tv_department_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_course_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course ID :"
+        android:layout_below="@id/department_id"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/course_id"
+        android:layout_below="@id/tv_course_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold" />
+</RelativeLayout>

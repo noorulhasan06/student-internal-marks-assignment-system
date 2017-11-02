@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mcs.du.noorul.smas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".Display_student" />
+        <activity android:name=".choose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".teacher_in" />
+        <activity android:name=".teaher_reg" />
+        <activity android:name=".teacher_dept" />
+        <activity android:name=".teacher_update_marks" />
+        <activity android:name=".StudentHome" />
+        <activity android:name=".TeacherHome" />
+        <activity android:name=".student_marks" />
+        <activity android:name=".Display_teacher" />
+        <activity android:name=".teacher_subject" />
+        <activity android:name=".teacher_student" />
+        <activity android:name=".UpdateMarks" />
+        <activity android:name=".add_sub_teacher" />
+
+    </application>
+
+</manifest>
